@@ -86,7 +86,7 @@ def phi_converge(filename = None):
         phi_old = phi_new
         phi_new = phi_approx(i, show_output=False)
         if filename:
-            f.write("\n"+phi_converge_output_format.format(i, phi_new, phi_old)) 
+            f.write("\n",phi_converge_output_format.format(i, phi_new, phi_old)) 
         else:
             print(phi_converge_output_format.format(i, phi_new, phi_old))
     if filename:
